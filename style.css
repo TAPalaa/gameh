@@ -1,0 +1,148 @@
+:root{
+    --m-bgc : rgb(155, 104, 9);
+
+}
+*{
+    transition: all 0.5s ease-in-out
+    scroll-behavior: smooth;
+}
+
+header{
+    grid-area: h;
+    background-color: var(--m-bgc);
+    grid-area: h;
+    background-color: var(--m-bgc);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header span{
+
+    background-color: #734401;
+    width: 200px;
+    height: 200px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px 5px #999953;
+    transition: all 0.5s ease-in-out
+}
+header span:hover {
+    box-shadow: 10px 10px 20px 20px #e1c046;
+}
+section{
+    grid-area: s;
+    background-color: var(--m-bgc);
+}
+section .box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+section .box .boxg{
+    margin: 30px 0px;
+    text-align: center;
+    width: 800px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+section .box .boxg:hover {
+    transform: scale(1.05) rotate(-0.5deg);
+    box-shadow: 10px 10px 20px 20px #e1c046;
+}
+section .box .boxg h2{
+    font-size: 2.5em;
+    background-color: #c17e03;
+    padding: 20px;
+    margin: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+section .box .boxg h2:hover {
+    color: #594122;
+}
+section .box .boxg .boxi{
+    font-size: 2em;
+    padding-top: 20px;
+    background-color: #7f5405;
+    width: 90%;
+    padding: 5%;
+}
+section .box .boxg .boxi:hover{
+    color: #c17e03;
+}
+section .box .boxg .boxt{
+    font-size: 1.5em;
+    background-color: #7f5405;
+    border-bottom: 30px solid #c17e03;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+}
+section .box .boxg .boxt h3{
+    margin: 0px;
+    padding: 20px;
+}
+section .box .boxg .boxt h3:hover{
+    color: #c17e03;
+}
+section .box .boxg .boxt .text:hover{
+    color: #c17e03;
+}
+
+aside{
+    grid-area: a;
+    background-color: var(--m-bgc);
+    grid-area: a;
+    background-color: var(--m-bgc);
+    width: 260px;
+    position: fixed;
+    top: 100px;
+    padding: 20px;
+    font-size: 2em;
+}
+aside ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+aside:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px 20px #e1c046;
+    margin-left: 20px;
+}
+aside ul a{
+    text-decoration: none;
+    padding: 5px 0px;
+    color: black;
+}
+aside ul a:hover{
+    color: #594122;
+    margin-left: 20px;
+}
+
+aside strong:hover{
+    color: #594122;
+}
+footer{
+    grid-area: f;
+    background-color: var(--m-bgc);
+    grid-area: f;
+    background-color: var(--m-bgc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+}
+body{
+    display: grid;
+    grid-template-areas: "a h" "a s" "f f";
+    grid-template-columns: 300px auto;
+    grid-template-rows: 300px auto 500px;
+    background-color: var(--m-bgc);
+
+}
